@@ -3,7 +3,7 @@
 extern int PIN_PMT;
 
 int ReadPMT() {
-  return analogRead(PIN_PMT);
+  return digitalRead(PIN_PMT);
 }
 
 int SimulatePMT() {
