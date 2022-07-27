@@ -19,6 +19,8 @@ void CheckDownlink() {
     data += ByteString(PMTHits, 8);
     data += ", ";
     data += ByteString(ReadTemp(1), 4);
+    data += ", ";
+    data += ByteString(ReadTemp(0), 4);
     data += "\n";
 
     SendDownlink(data);
